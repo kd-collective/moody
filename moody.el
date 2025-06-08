@@ -313,8 +313,7 @@ not specified, then ad hoc faces based on `default', `mode-line',
 ;;;; mode-line-buffer-identification
 
 (defvar-local moody-mode-line-buffer-identification
-    '(:eval (moody-tab (car (propertized-buffer-identification (buffer-name)))
-                       20 'down)))
+  '(:eval (moody-tab (car (propertized-buffer-identification "%b")) 20 'down)))
 
 (put 'moody-mode-line-buffer-identification 'risky-local-variable t)
 
